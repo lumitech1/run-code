@@ -8,15 +8,20 @@
 </head>
 <body>
     <div class="sidebar">
-        <button>&#9776;</button>
-        <button>&#128427;</button>
-        <button>&#128736;</button>
-    </div>
+        <div class="toggle-btn">
+            <button id="menu-btn">&#9776;</button>
+        </div>
+        <div class="sidebar-content">
+            <button>&#128427;</button>
+            <button>&#128736;</button>
+        </div>
+    </div>    
     <div class="editor">
         <div class="tabs">
             <button class="tab-btn active" data-tab="html">HTML</button>
             <button class="tab-btn" data-tab="css">CSS</button>
             <button class="tab-btn" data-tab="js">JavaScript</button>
+            <button class="tab-btn" data-tab="json">JSON</button>
         </div>
         <div class="code-area active" id="html">
             <textarea id="html-code" placeholder="Write HTML code here. [© 2024 Nguyễn Hoàng Nam]"></textarea>
@@ -26,6 +31,9 @@
         </div>
         <div class="code-area" id="js">
             <textarea id="js-code" placeholder="Write JavaScript code here. [© 2024 Nguyễn Hoàng Nam]"></textarea>
+        </div>
+        <div class="code-area" id="json">
+            <textarea id="json-code" placeholder="Write JSON code here. [© 2024 Nguyễn Hoàng Nam]"></textarea>
         </div>
         <div class="controls">
             <button class="run-btn" onclick="runCode()">Run</button>

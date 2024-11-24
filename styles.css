@@ -104,9 +104,56 @@ textarea {
     background-color: #005f8c;
 }
 
+/* Định dạng JSON output */
+pre {
+    background-color: #1e1e1e;
+    color: #00ff00; /* Màu xanh để JSON dễ đọc */
+    padding: 10px;
+    border-radius: 8px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+.hidden {
+    display: none; /* Ẩn sidebar */
+}
+
 .output {
-    height: 40%;
+    height: 60%; /* Increased height for better visibility */
+    border: 2px solid #007acc; /* Add a border to highlight the output section */
+    background-color: white; /* Ensure the background remains clean */
+    color: black; /* Ensure text color is readable */
+    margin: 10px; /* Add margin around the output for spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    overflow: auto; /* Handle overflow if the content exceeds size */
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar.hidden .sidebar-content {
+    display: none; /* Chỉ ẩn phần nội dung */
+}
+
+.toggle-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #252526;
+    padding: 5px;
+}
+
+#menu-btn {
+    background: none;
     border: none;
-    background-color: white; /* Thay đổi nền sang trắng */
-    color: black; /* Thay đổi chữ sang màu đen */
+    color: #d4d4d4;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#menu-btn:hover {
+    color: #007acc;
 }
